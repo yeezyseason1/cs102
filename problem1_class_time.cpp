@@ -113,6 +113,10 @@ ostream& operator<<(ostream& os, const Time& obj)
 	return os;
 }
 
+// I added this main function because im pretty sure all c++ programs have to have one
+// and its the only way it made sense to me. 
+
+// sets the time in seconds which is to be converted
 int main() {
 
     Time test;
