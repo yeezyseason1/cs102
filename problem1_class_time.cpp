@@ -1,3 +1,6 @@
+//i dont remember editing anything in the code she gave us i think i just added the int main function at the bottom
+//if i did edit this code i dont think it was much. it probably just threw up a few errors or warnings
+
 #include "OOP.h"
 #include <iomanip>
 
@@ -119,13 +122,14 @@ ostream& operator<<(ostream& os, const Time& obj)
 // sets the time in seconds which is to be converted
 int main() {
 
-    Time test;
-    int time = 0;
-    std::cout << "Enter time: ";
-    std::cin >> time;
+    Time test; //declares object
+    int time = 0; //this is going to input
+    std::cout << "Enter time: "; //asks user to input
+    std::cin >> time; //inputs it
 
     
-    test.setTime(time);
-    test.convertTime();
-    std::cout << test << std::endl;
+    test.setTime(time); //uses time as a paramter in the function which sets the time
+    test.convertTime(); //calls the converTime function to put it in correct format
+    std::cout << test << std::endl; //outputs the results using the overloaded operator functions used above
+				    //i do not understand those yet but when ran on my machine this code works
 }
